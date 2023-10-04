@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+ <html>
+
+<head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>trust bank</title>
+<script src="https://kit.fontawesome.com/da18ee42b5.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>  
+
+    <link rel="stylesheet" href="dashboard.css">
+  </head>
+   <body>
+  
+  <div class="header">
+    <img src="image.png" alt="image">
+    <h3 id="welcome">Welcome, Fields</h3>
+  </div>
+  
+<div class="account">
+  <h2>Available Balance</h2>
+  <h1 id="h11"><span>$</span>80,542.00</h1>
+  savings
+<i class="fa-solid fa-eye" id="eye" onclick="toggle ()"></i>
+</div><br>
+
+
+<div class="transaction">
+  <h4>Transaction History</h4>
+  <hr>
+                      Time:     02:56pm
+  <span>John miller<h3>$4,000</h3>sent</span> <p>08/05/23</p>
+     receipt
+  <hr>
+                      Time:     12:09pm
+ <span> Williams Tom<h3>$1,500</h3>sent</span><p>08/03/23</p>
+    receipt
+  <hr>
+                      Time:      12:56pm
+  <span>Brown Charles<h3>$500</h3>sent</span><p>08/02/23</p>
+     receipt
+  <hr>
+                        Time:  3:30pm
+  <span>Brooke Benson<h3>$200</h3>sent
+     </span><p>07/04/23</p>
+     receipt
+  <hr>
+                         Time: 9:23am
+  <span>Adams grey<h3>$500</h3>sent</span><p>05/05/23</p>
+    receipt
+  <hr>
+  
+                         Time: 11:23am
+  <span>john clark<h3>$500</h3>sent</span><p>05/04/23</p>
+    receipt
+  <hr>
+  
+                         Time:  7:33am
+  <span>Abraham Anderson<h3>$50</h3>sent</span><p>05/04/23</p>
+    receipt
+  <hr>
+</div>
+<div class="fixed">
+  
+  <i class="fa-solid fa-building-columns fa-2xl"></i><br> 
+  
+<h2>Account</h2>
+
+<i class="fa-solid fa-money-bill-trend-up fa-2xl"></i><br>
+
+<h2 onclick="fun()">withdraw</h2>
+
+<i class="fa-solid fa-money-bill-transfer fa-2xl"></i><br>
+
+<h2 onclick="fun()">Deposit</h2>
+<i class="fa-solid fa-spinner fa-2xl"></i><br>
+
+<h2 onclick="set()">setup</h2>
+
+</div>
+
+<script>
+
+
+
+
+  function fun(){
+swal({
+  title: "Hello Fields",
+  text: "we apologise for the inconveniences as we are currently working on the site your transaction will be on soon!",
+  icon: "fail",
+  dangerMode: false,
+  button:"submit",
+ 
+})
+  }
+  
+function set() {
+    swal({
+      title: "Hello Field",
+      text: "we apologise for the inconveniences we are currently working on the site will soon be fixed !!",
+      icon: "fail",
+      dangerMode: false,
+      button: "submit",
+  
+    })
+  }
+  
+</script>
+</body>
+
+</html>

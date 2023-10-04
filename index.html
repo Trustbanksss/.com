@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>trust bank</title>
+ <link rel="stylesheet" href="bank.css">
+<script src="https://kit.fontawesome.com/da18ee42b5.js" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>  
+
+ 
+ </head>
+ <body>
+  <div class="preloader">
+    <img src="image.png" alt="image">
+    </div>
+ 
+ <div class="header">
+      <img id="photo" src="image.png" alt="image">
+      <h1>welcome</h1><br>
+      
+      <h3>sign in to your account</h3>
+    </div>
+    <div class="form">
+     <div class="error" >
+       
+     </div>
+  <input type="text" placeholder="  Access ID" id="username" required/><br>
+
+  <input type="password" placeholder="    password" id="password" required/>
+  </div>
+  
+  <div class="check">
+  <label for="">Remember me</label>
+      <input type="checkbox" >
+  </div>
+ <button class="button" onclick="auth()"> sign in</button>
+        <p>forgotten password?</p>
+      <br>
+<a href="account.html"><button >create account</button></a>
+
+
+
+  <script>
+  
+
+
+
+
+const preloader = document.querySelector(".preloader");
+    
+    window.addEventListener("load", removePreloader);
+    
+    function removePreloader() {
+      preloader.classList.add("end-preloader");
+    }
+    
+    
+    function auth() {
+      const email = document.getElementById("username").value;
+      const password = document.getElementById("password").value;
+      if (email == "michael@gmail.com" && password == "Fields23467") {
+        window.location.assign("dashboard.html");
+        
+      }
+      else {
+        swal("incorrect information"
+        );
+        return;
+      }
+    }
+  </script>
+
+</body>
+
+</html>
